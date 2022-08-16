@@ -12,7 +12,7 @@ def shoot_noti():
 def check_software():
     return sys.argv[1] not in (p.name() for p in psutil.process_iter())
 
-direccion_abs = path.abspath(path.dirname(__file__))
+direccion_abs = path.abspath(path.dirname(__file__))+"/assets"
 
 audio = "Mario-Muerte.wav"
 
